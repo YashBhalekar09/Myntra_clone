@@ -5,49 +5,47 @@
   margin: 0;
 }
 
-body {
+body,
+html {
   background-color: #ffffff;
   font-family: "Assistant", sans-serif;
 }
 
 nav {
-  height: 100px;
+  height: 80px;
   width: 100%;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   position: fixed;
   box-shadow: 0px 0px 5px #a2a2a277;
-  z-index: 100;
-}
-
-.container {
+  z-index: 10;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  gap: 30px;
-  padding: 10px;
-}
-.container img {
-  height: 70px;
-  width: 70px;
-  margin-left: 50px;
 }
 
-.container a {
+#image {
+  width: 60px;
+  margin-left: 60px;
+}
+
+a {
   text-decoration: none;
-  font-size: 18px;
-  color: rgba(0, 0, 0, 0.822);
+  padding: 14px;
   font-weight: 700;
+  color: #4d5262;
+}
+
+a:hover {
+  border-bottom: 1px solid #4d5262;
 }
 
 .search input {
   height: 35px;
-  width: 400px;
+  width: 300px;
   background-color: #f5f5f6;
-  font-size: 16px;
-  padding: 5px;
-  padding-left: 50px;
+  font-size: 14px;
+  padding-left: 40px;
   border: none;
-  margin-left: 200px;
+  margin-left: 100px;
 }
 
 .search {
@@ -56,25 +54,31 @@ nav {
 
 .search i {
   position: absolute;
-  top: 16px;
-  left: 210px;
+  top: 10px;
+  left: 110px;
   color: rgba(39, 12, 12, 0.664);
 }
 
 .profile {
-  font-size: 20px;
+  font-size: 15px;
   display: flex;
   flex-direction: column;
-
   align-items: center;
+  padding: 8px;
 }
 
 .profile span {
-  font-size: 18px;
+  font-size: 15px;
+}
+
+#imagealign {
+  display: flex;
+  margin-left: 60px;
+  align-items: center;
 }
 
 .main {
-  padding-top: 140px;
+  padding-top: 110px;
   position: relative;
 }
 
@@ -85,7 +89,7 @@ nav {
 
 .advertise {
   position: relative;
-  margin-top: 500px;
+  margin-top: 400px;
 }
 
 .advertise .one {
@@ -113,33 +117,33 @@ nav {
 .bellicon .bell {
   position: absolute;
   position: fixed;
-  top: 665px;
-  left: 200;
+  top: 510px;
+  left: 180;
   right: 30px;
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
   background: #0086f7;
   border-radius: 50%;
   z-index: 100;
 }
 
 .bell i {
-  font-size: 30px;
+  font-size: 28px;
   color: white;
   position: absolute;
   position: fixed;
-  top: 680px;
+  top: 520px;
   left: 200;
-  right: 48px;
+  right: 42px;
 }
 
 .add {
-  height: 350px;
+  height: 300px;
   width: 50px;
   background-color: #525766;
   position: absolute;
   position: fixed;
-  top: 300px;
+  top: 200px;
   left: 200;
   right: 10px;
   z-index: 100;
@@ -148,25 +152,25 @@ nav {
 .add p {
   writing-mode: vertical-lr;
   transform: rotate(180deg);
-  width: 40px;
-  padding: 4px;
-  margin-top: 100px;
-  height: 230px;
+  width: 30px;
+  padding: 10px;
+  margin-top: 70px;
+  height: 210px;
   vertical-align: middle;
   text-align: center;
-  font-size: 33px;
+  font-size: 30px;
   font-weight: 600;
   color: #fcfcfc;
 }
 
 .add i {
-  font-size: 50px;
+  font-size: 35px;
   color: rgb(255, 255, 255);
   position: absolute;
   position: fixed;
-  top: 320px;
+  top: 220px;
   left: 200;
-  right: 20px;
+  right: 25px;
   z-index: 100;
 }
 
@@ -233,12 +237,11 @@ nav {
 }
 
 .shopping img {
-  width: 280px;
-  margin-right: -10px;
+  width: 224px;
 }
 
 .category #end {
-  margin-left: 500px;
+  padding-left: 350px;
 }
 
 .banner img {
@@ -356,6 +359,9 @@ hr {
   margin-left: 140px;
   display: block;
   width: 50%;
+}
+.divinfo {
+  font-size: 10px;
 }
 
 .tel {
